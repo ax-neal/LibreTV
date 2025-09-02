@@ -13,28 +13,33 @@
 ### 本地开发设置
 
 1. **Fork 项目**
+
    ```bash
    # 通过 GitHub 网页 Fork 本项目到您的账户
    ```
 
 2. **克隆仓库**
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/LibreTV.git
    cd LibreTV
    ```
 
 3. **安装依赖**
+
    ```bash
    npm install
    ```
 
 4. **配置环境变量**
+
    ```bash
    cp .env.example .env
    # 根据需要修改 .env 文件中的配置
    ```
 
 5. **启动开发服务器**
+
    ```bash
    npm run dev
    ```
@@ -61,6 +66,7 @@
 ### 提交代码
 
 1. **创建分支**
+
    ```bash
    git checkout -b feature/your-feature-name
    # 或
@@ -68,15 +74,17 @@
    ```
 
 2. **进行开发**
+
    - 保持代码风格一致
    - 添加必要的注释
    - 确保功能正常工作
 
 3. **测试更改**
+
    ```bash
    # 确保应用正常启动
    npm run dev
-   
+
    # 测试各项功能
    # - 视频搜索
    # - 视频播放
@@ -85,12 +93,14 @@
    ```
 
 4. **提交更改**
+
    ```bash
    git add .
    git commit -m "类型: 简洁的提交信息"
    ```
 
 5. **推送分支**
+
    ```bash
    git push origin feature/your-feature-name
    ```
@@ -113,6 +123,7 @@
 ```
 
 **提交类型：**
+
 - `feat`: 新功能
 - `fix`: 修复 bug
 - `docs`: 文档更新
@@ -122,6 +133,7 @@
 - `chore`: 构建过程或辅助工具的变动
 
 **示例：**
+
 ```
 feat: 添加自定义播放器控制栏
 
@@ -144,15 +156,15 @@ feat: 添加自定义播放器控制栏
 
 ```javascript
 // ✅ 推荐
-const API_BASE_URL = 'https://api.example.com';
+const API_BASE_URL = "https://api.example.com";
 const searchVideos = async (keyword) => {
-    // 函数实现
+  // 函数实现
 };
 
 // ❌ 不推荐
-var url = 'https://api.example.com';
+var url = "https://api.example.com";
 function search(k) {
-    // 函数实现
+  // 函数实现
 }
 ```
 
@@ -166,18 +178,18 @@ function search(k) {
 ```css
 /* ✅ 推荐 */
 .video-player {
-    --primary-color: #00ccff;
-    background-color: var(--primary-color);
+  --primary-color: #00ccff;
+  background-color: var(--primary-color);
 }
 
 .video-player__controls {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 /* ❌ 不推荐 */
 .player {
-    background-color: #00ccff !important;
+  background-color: #00ccff !important;
 }
 ```
 
@@ -190,16 +202,16 @@ function search(k) {
 ```html
 <!-- ✅ 推荐 -->
 <main class="video-search">
-    <section class="search-form" role="search">
-        <input type="search" aria-label="搜索视频" placeholder="输入关键词">
-        <button type="submit" aria-label="搜索">搜索</button>
-    </section>
+  <section class="search-form" role="search">
+    <input type="search" aria-label="搜索视频" placeholder="输入关键词" />
+    <button type="submit" aria-label="搜索">搜索</button>
+  </section>
 </main>
 
 <!-- ❌ 不推荐 -->
 <div class="search">
-    <input type="text" placeholder="搜索">
-    <div onclick="search()">搜索</div>
+  <input type="text" placeholder="搜索" />
+  <div onclick="search()">搜索</div>
 </div>
 ```
 
@@ -208,24 +220,28 @@ function search(k) {
 我们特别欢迎以下方面的贡献：
 
 ### 核心功能
+
 - **搜索优化**: 改进搜索算法和用户体验
 - **播放器增强**: 新的播放器功能和控制选项
 - **API 集成**: 添加新的视频源 API 支持
 - **性能优化**: 加载速度和播放性能改进
 
 ### 用户体验
+
 - **界面设计**: UI/UX 改进和现代化
 - **响应式设计**: 移动端体验优化
 - **无障碍功能**: 提高可访问性
 - **国际化**: 多语言支持
 
 ### 技术架构
+
 - **代码重构**: 提高代码质量和可维护性
 - **安全性**: 安全漏洞修复和防护
 - **部署优化**: 改进各平台部署流程
 - **监控日志**: 添加错误监控和日志系统
 
 ### 文档和社区
+
 - **文档完善**: API 文档、部署指南等
 - **示例项目**: 集成示例和最佳实践
 - **社区建设**: 问题回答和新手指导
